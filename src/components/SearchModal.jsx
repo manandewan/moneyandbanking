@@ -97,16 +97,23 @@ export default function SearchModal({ isOpen, onClose, onSelectLevel }) {
             placeholder="Search theories, committees, formulas, or FAQs (e.g. MCLR, CD, Vaghul, Multiplier)..."
             className="w-full bg-transparent text-sm sm:text-base text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none"
           />
-          {query ? (
+          {query && (
             <button 
               onClick={() => setQuery('')}
               className="p-1 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              title="Clear search"
             >
               <X className="w-4 h-4" />
             </button>
-          ) : (
-            <kbd className="hidden sm:inline text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 font-mono">ESC</kbd>
           )}
+          <button
+            onClick={onClose}
+            className="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 sm:hidden"
+            title="Close Search"
+          >
+            <X className="w-4 h-4" />
+          </button>
+          <kbd className="hidden sm:inline text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 font-mono">ESC</kbd>
         </div>
 
         {/* Results List */}

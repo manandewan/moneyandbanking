@@ -12,6 +12,8 @@ node_modules/
 
 # Scratch and temp files
 scratch/
+mobile_*.png
+
 
 # Production build
 dist/

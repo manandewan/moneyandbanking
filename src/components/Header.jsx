@@ -17,27 +17,27 @@ export default function Header({
         <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo & Main Title */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 font-bold text-xl">
+          <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0 flex-1 mr-2">
+            <div className="w-9 h-9 sm:w-12 sm:h-12 shrink-0 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 font-bold text-lg sm:text-xl">
               🏦
             </div>
-            <div>
+            <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h1 className="text-base sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                <h1 className="text-sm sm:text-base md:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white truncate">
                   Money & Banking <span className="text-indigo-600 dark:text-indigo-400">Quiz Master</span>
                 </h1>
                 <span className="hidden md:inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                   DU Sem 5 GE
                 </span>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">
+              <p className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block truncate">
                 SOL Book & Official Syllabus • 25-Mark MCQ Quiz Exam Prep
               </p>
             </div>
           </div>
 
           {/* Right Action Icons & Controls */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
+          <div className="flex items-center space-x-1.5 sm:space-x-3 shrink-0">
             
             {/* Global Search Button */}
             <button

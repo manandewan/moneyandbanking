@@ -126,7 +126,7 @@ export default function UnitSummaryView({ onSelectLevel }) {
                 • <strong>Keynesian Tripartite Motives:</strong> 
                 (i) <em>Transaction Motive ($M_T = f(Y)$):</em> active balance for day-to-day spending; 
                 (ii) <em>Precautionary Motive ($M_P = f(Y)$):</em> idle balance for unforeseen contingencies; 
-                (iii) <em>Speculative Motive ($M_sp = f(r)$):</em> idle cash held to speculate on bond prices. Because bond prices fluctuate inversely with interest rates ($P_{bond} = C / r$), when interest rates are low, people hold cash (expecting rates to rise and bond prices to tumble).
+                (iii) <em>Speculative Motive ($M_sp = f(r)$):</em> idle cash held to speculate on bond prices. Because bond prices fluctuate inversely with interest rates (P_bond = C / r), when interest rates are low, people hold cash (expecting rates to rise and bond prices to tumble).
               </p>
               <p>
                 • <strong>Liquidity Trap:</strong> At the floor interest rate $r_min$, speculative demand becomes perfectly elastic (horizontal). People absorb all extra liquidity into cash, rendering expansionary monetary policy powerless to reduce rates further.
@@ -487,10 +487,11 @@ export default function UnitSummaryView({ onSelectLevel }) {
 
           {/* Matrix 1: Interest Rate Theories */}
           <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm overflow-x-auto">
-            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300">
-              Table 1: Three Core Theories of Interest Rate Determination
+            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300 flex items-center justify-between">
+              <span>Table 1: Three Core Theories of Interest Rate Determination</span>
+              <span className="text-[10px] font-normal text-slate-400 sm:hidden">Swipe →</span>
             </h4>
-            <table className="w-full text-xs text-left border-collapse">
+            <table className="min-w-[640px] w-full text-xs text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-bold bg-slate-50 dark:bg-slate-800/50">
                   <th className="p-2.5">Theory</th>
@@ -532,10 +533,11 @@ export default function UnitSummaryView({ onSelectLevel }) {
 
           {/* Matrix 2: Term Structure Theories */}
           <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm overflow-x-auto">
-            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300">
-              Table 2: Theories of the Term Structure of Interest Rates
+            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300 flex items-center justify-between">
+              <span>Table 2: Theories of the Term Structure of Interest Rates</span>
+              <span className="text-[10px] font-normal text-slate-400 sm:hidden">Swipe →</span>
             </h4>
-            <table className="w-full text-xs text-left border-collapse">
+            <table className="min-w-[580px] w-full text-xs text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-bold bg-slate-50 dark:bg-slate-800/50">
                   <th className="p-2.5">Theory</th>
@@ -573,10 +575,11 @@ export default function UnitSummaryView({ onSelectLevel }) {
 
           {/* Matrix 3: Evolution of Indian Lending Rates */}
           <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm overflow-x-auto">
-            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300">
-              Table 3: Chronological Evolution of Bank Lending Benchmarks in India
+            <h4 className="text-sm font-bold text-indigo-700 dark:text-indigo-300 flex items-center justify-between">
+              <span>Table 3: Chronological Evolution of Bank Lending Benchmarks in India</span>
+              <span className="text-[10px] font-normal text-slate-400 sm:hidden">Swipe →</span>
             </h4>
-            <table className="w-full text-xs text-left border-collapse">
+            <table className="min-w-[540px] w-full text-xs text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-bold bg-slate-50 dark:bg-slate-800/50">
                   <th className="p-2.5">System</th>

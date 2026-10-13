@@ -96,7 +96,7 @@ export default function FlashcardsView() {
       <div className="perspective-1000 py-4 flex justify-center">
         <div
           onClick={() => setIsFlipped(!isFlipped)}
-          className={`relative w-full max-w-2xl min-h-[320px] sm:min-h-[360px] cursor-pointer rounded-3xl p-8 sm:p-10 shadow-2xl transition-all duration-500 flex flex-col justify-between border ${
+          className={`relative w-full max-w-2xl min-h-[300px] sm:min-h-[360px] cursor-pointer rounded-3xl p-6 sm:p-10 shadow-2xl transition-all duration-500 flex flex-col justify-between border ${
             isFlipped
               ? 'bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 text-white border-indigo-700/60 shadow-indigo-500/10'
               : 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-600'
